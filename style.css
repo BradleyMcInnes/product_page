@@ -1,6 +1,16 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+/* Image */
+
 #header {
   position: fixed;
   display: flex;
+  background-color: #FFFFFF;
+  width: 100%;
 }
 
 #header-img {
@@ -8,9 +18,12 @@
   padding-left: 50px;
 }
 
+/* Nav - Topline */
+
 .nav-bar {
   background-color: #FFFFFF;
-  height: 100px;
+  height: 60px;
+  padding-left: 150px;
 }
 
 li {
@@ -35,11 +48,48 @@ h2 {
   font-family: 'Open Sans';
 }
 
+/* What we offer section*/
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_element {
+    display: flex;
+    font-size: 10px;
+}
+
+.grid_element h2 {
+    font-size: 2.5em;
+}
+
+.grid_element p {
+    font-size: 1.5em;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: royalblue;
+    font-size: 4em;
+}
+
 .What_We_Offer {
   padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;  
+}
+
+/*Pricing Section*/
+
+/* Why does this work and the .contact h2 one does not?*/
+.pricing h2 {
+    padding-left: 50px;
 }
 
 .Price_box {
@@ -56,21 +106,28 @@ h2 {
   align-items: center;
 }
 
-.container {
+.price_container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 @media (max-width: 650px) {
-  .container {
+  .price_container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
 
-.Contact {
+/* Contact */
+    
+    .contact h2 {
+        padding-left: 50px;
+    }
+    
+/*.Contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+}*/
+    
