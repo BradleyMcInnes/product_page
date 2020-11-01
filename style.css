@@ -44,15 +44,21 @@ nav > ul {
   justify-content: space-around;
 }
 
-h2 {
-  font-family: 'Open Sans';
+/* wrap class that covers ALL of the sections below */
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
 }
 
-/* What we offer section*/
+/* What we offer section */
 
-.grid {
-    display: flex;
-    flex-direction: column;
+.What_We_Offer {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
 }
 
 .grid_element {
@@ -78,16 +84,8 @@ h2 {
     font-size: 4em;
 }
 
-.What_We_Offer {
-  padding-top: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
-}
-
 /*Pricing Section*/
 
-/* Why does this work and the .contact h2 one does not?*/
 .pricing h2 {
     padding-left: 50px;
 }
@@ -119,15 +117,31 @@ h2 {
     justify-content: space-around;
   }
 
-/* Contact */
+/* Contact - none of the below works */
     
-    .contact h2 {
-        padding-left: 50px;
-    }
-    
-/*.Contact {
+.Contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-}*/
+}
+    
+.contact h2 {
+        padding-left: 50px;
+}
+    
+ #Contact input[type='email'] {
+     max-width: 275px;
+     width: 100%;
+}
+   
+#Contact input[type='submit'] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+        
+}
+
     
